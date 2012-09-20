@@ -1,4 +1,6 @@
 HomicideSite::Application.routes.draw do
+  resources :participants
+
   resources :episodes
 
   resources :series
