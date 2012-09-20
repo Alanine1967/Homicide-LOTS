@@ -2,10 +2,11 @@ HomicideSite::Application.routes.draw do
   
   root to: "series#index"
   resources :participants
+  resources :series do
+    resources :episodes
+  end
 
-  resources :episodes
 
-  resources :series
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
