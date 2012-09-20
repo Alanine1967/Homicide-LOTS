@@ -1,4 +1,6 @@
 HomicideSite::Application.routes.draw do
+  
+  root to: "series#index"
   resources :participants
 
   resources :episodes
